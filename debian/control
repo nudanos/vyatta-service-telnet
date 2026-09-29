@@ -1,9 +1,15 @@
 Source: vyatta-service-telnet
-Section: contrib/net
-Priority: extra
-Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
-Build-Depends: config-package-dev, cpio, debhelper (>= 9.20160709), dh-yang
-Standards-Version: 3.9.6
+Section: net
+Priority: optional
+Maintainer: NuDanOS Maintainers <jon@fernandez.tech>
+Build-Depends: debhelper-compat (= 13),
+ config-package-dev,
+ cpio,
+ dh-yang
+Standards-Version: 4.7.2
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/nudanos/vyatta-service-telnet.git
+Vcs-Browser: https://github.com/nudanos/vyatta-service-telnet
 
 Package: vyatta-service-telnet
 Architecture: any
