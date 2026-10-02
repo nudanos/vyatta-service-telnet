@@ -8,7 +8,7 @@ mini-inetd:
 
 install:
 	mkdir -p $(DESTDIR)/usr/sbin
-	install -m755 -t $(DESTDIR)/usr/sbin scripts/system/update-inetd
+	install -m755 scripts/system/update-inetd $(DESTDIR)/usr/sbin/update-inetd.vyatta
 	mkdir -p $(DESTDIR)/opt/vyatta/sbin
 	install -m755 -t $(DESTDIR)/opt/vyatta/sbin \
 		scripts/system/vyatta_update_telnet

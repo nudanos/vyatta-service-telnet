@@ -1,3 +1,11 @@
+vyatta-service-telnet (1.13) trixie; urgency=medium
+
+  * Install the update-inetd stub as /usr/sbin/update-inetd.vyatta and
+    displace Debian's update-inetd (config-package-dev) instead of
+    overwriting a file owned by the update-inetd package.
+
+ -- NuDanOS Maintainers <jon@fernandez.tech>  Fri, 02 Oct 2026 09:39:48 -0700
+
 vyatta-service-telnet (1.12) trixie; urgency=medium
 
   * Port to Debian 13 (trixie): debhelper-compat 13, Standards-Version 4.7.2, Rules-Requires-Root, NuDanOS Vcs.
